@@ -4,27 +4,6 @@
 
 A real-time IoT system that allows remote control of a passive buzzer connected to an ESP32 via HTTP API. The system uses FastAPI as the backend server, enabling wireless sound effect playback through WiFi communication. Currently uses Postman/API testing tools for control, with the option to add a React frontend for a more user-friendly interface.
 
----
-
-## 📋 Table of Contents
-
-- [Overview](##overview)
-- [Features](#features)
-- [Sound Effects Library](#sound-effects-library)
-- [Tech Stack](#tech-stack)
-- [Hardware Requirements](#hardware-requirements)
-- [Installation & Setup](#installation--setup)
-  - [Backend Setup (FastAPI)](#backend-setup-fastapi)
-  - [ESP32 Setup](#esp32-setup)
-  - [Frontend Setup (Optional)](#frontend-setup-optional)
-- [API Documentation](#api-documentation)
-- [Usage Guide](#usage-guide)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-
-
----
-
 ## 🎯 Overview
 
 This project enables wireless control of a passive buzzer using an ESP32 microcontroller. The system communicates over HTTP with a FastAPI backend server, allowing users to trigger various sound effects remotely. It's perfect for IoT projects, interactive installations, or adding audio feedback to applications.

@@ -8,7 +8,7 @@ A real-time IoT system that allows remote control of a passive buzzer connected 
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
+- [Overview](##overview)
 - [Features](#features)
 - [Sound Effects Library](#sound-effects-library)
 - [Tech Stack](#tech-stack)

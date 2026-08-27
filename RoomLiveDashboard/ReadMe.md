@@ -2,7 +2,8 @@
 
 ## 📋 Overview
 
-A real-time IoT sensor monitoring system that collects environmental data (temperature, humidity) from an ESP32 microcontroller and displays it through a WebSocket-powered dashboard. The system uses FastAPI as the backend server to handle data ingestion and real-time data streaming.
+A real-time IoT sensor monitoring system that collects environmental data (temperature, humidity) from an ESP32 microcontroller and displays it through a WebSocket-powered dashboard. The system uses FastAPI as the backend server to handle data ingestion and real-time data streaming 
+which is shown in a vibecoded frontend website.
 
 ---
 
@@ -299,7 +300,7 @@ const socket = new WebSocket("ws://localhost:8000/data");
          │ WebSocket (0.5s interval)
          ▼
 ┌─────────────────┐
-│  React Dashboard│
+│  React Dashboard│Frontend is vibecoded here
 │  - Live Updates │
 │  - UI Rendering │
 └─────────────────┘
@@ -398,14 +399,10 @@ curl http://localhost:8000
 
 ---
 
-## 🎨 Dashboard Screenshots
-
 *The dashboard features:*
-- Glass-morphism design with gradient backgrounds
 - Animated live indicator
 - Color-coded sensor cards (Temperature: blue, Humidity: cyan, Heart Rate: red)
 - Responsive layout for all devices
-- Real-time trend indicators
 
 ---
 

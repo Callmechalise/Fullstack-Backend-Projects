@@ -21,9 +21,7 @@ A real-time IoT system that allows remote control of a passive buzzer connected 
 - [Usage Guide](#usage-guide)
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+
 
 ---
 

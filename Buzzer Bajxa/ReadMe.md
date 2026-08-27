@@ -322,26 +322,6 @@ else if(x==4) {
 }
 ```
 
----
-
-## 📁 Project Structure
-
-```
-esp32-buzzer-controller/
-├── backend/
-│   └── main.py                 # FastAPI server
-├── esp32/
-│   └── buzzer_controller.ino   # ESP32 code
-├── frontend/ (optional)
-│   ├── src/
-│   │   ├── App.js
-│   │   └── BuzzerControl.jsx
-│   └── package.json
-└── README.md
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:

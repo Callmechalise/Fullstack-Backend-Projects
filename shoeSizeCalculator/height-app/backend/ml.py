@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+import pickle
 
 df=pd.read_csv("./data.csv")
 
@@ -17,9 +18,8 @@ x_test_scaled=scaler.transform(x_test)
 LR=LinearRegression()
 LR.fit(x_train_scaled,y_train)
 
-def predict(x:int):
-    array=[[x]]
-    size=LR.predict(scaler.transform(array))
-    for x in size:
-        for y in x:
-            return y
+with open('linear_regression_model.pkl', 'wb') as file:
+    pickle.dump(LR, file)
+
+with open("scaler.pkl", "wb") as file:
+    pickle.dump(scaler, file)

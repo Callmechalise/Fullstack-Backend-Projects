@@ -1,7 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from ml import predict
+from loadedmodel import predict
+from functools import lru_cache
 app = FastAPI()
 
 app.add_middleware(
@@ -25,10 +26,10 @@ user_height = 0
 async def root():
     return {"message": "Height API is running"}
 
+@lru_cache
 @app.post("/height", response_model=HeightResponse)
 async def receive_height(request: HeightRequest):
     global user_height
-    
     try:
         if request.height <= 0:
             raise HTTPException(status_code=400, detail="Height must be greater than 0")
